@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -81,7 +82,7 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   position: relative;
 }
 
@@ -106,13 +107,21 @@ body {
 .main .profile-container .left .img {
   height: 120%;
 
-  width: 70%;
+  width: 100%;
   background-image: url(assets/profile2.jpg);
   background-size: fit;
   background-position: center;
   background-repeat: no-repeat;
   bottom: -30%;
   position: absolute;
+}
+.main .profile-container .left .con {
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  font-size: 120px;
+  letter-spacing: 8px;
+  color: #ffffff;
 }
 
 .main .profile-container .right .about-b {
@@ -221,7 +230,7 @@ body {
 .works {
   height: max-content;
   width: 100%;
-  padding: 0 6rem;
+  padding: 0 8rem;
 }
 
 .works .head {
@@ -241,7 +250,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows:auto ; */
   justify-content: center;
-  gap: 1.3rem;
+  gap: 1rem;
 }
 
 .works .grid .grid-item1,
@@ -354,6 +363,57 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   width: max-content;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 600;
+}
+.works .end .button .button-text {
+  letter-spacing: 1px;
+}
+
+.works .end .button:hover {
+  background-color: #ffffff;
+}
+
+.form {
+  margin-top: 2rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  background-color: #c2ce62;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .left {
+  width: fit-content;
+}
+
+.form .right {
+  width: fit-content;
+}
+
+.form .left .label {
+  width: 4rem;
+  height: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form .left .email {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.form .left .label .bottom-line {
+  height: 3px;
+  width: 100%;
 }
