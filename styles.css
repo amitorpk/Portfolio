@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin:0;
+}
+body
+{
+    height: max-content;
+    width: 100%;
+    background-color: #1f203a;
+}
+
+.main
+{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.main .header
+{
+    
+    height: 5rem;
+    width:100%;
+}
+
+.main .profile
+{
+    height: 50vh;
+    width: 100%;
+    background-color: #c2ce62;
+}
+
+.container
+{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .sub-container
+{
+    max-width: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    
+}
+
+.container .sub-container .head
+{
+    font-size: 120px;
+    font-weight:bold;
+    color: #ffffff;
+    letter-spacing: 8px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+}
+
+.container .sub-container .sub-head
+{
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+
+.container .sub-container .content
+{
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.container .sub-container .button
+{
+    margin-top: 2rem;
+    background-color:#c2ce62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+}
+
+.container .sub-container .button .button-text
+{
+     letter-spacing: 1px;
+}
+
+.works
+{
+    height: max-content;
+    width: 100%;
+    padding: 0 6rem;
+
+}
+
+.works .head
+{
+    font-size: 120px;
+    font-weight:bold;
+    color: #ffffff;
+    letter-spacing: 8px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+}
+
+.works .grid
+{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    /* grid-template-rows:auto ; */
+    justify-content: center;
+    gap:1.3rem;
+}
+
+.works  .grid .grid-item1,
+.grid-item2,.grid-item3,
+.grid-item4,.grid-item5,
+.grid-item6,.grid-item7,
+.grid-item8,.grid-item9
+{     position: relative;
+      aspect-ratio: 4/3;
+      width: auto;
+      /* background-color: yellow; */
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-clip: content-box;
+       
+}
+.grid-item1
+{
+    background-image: url(assets/item1.jpg);
+}
+.grid-item2
+{
+    background-image: url(assets/item2.jpg);
+}
+.grid-item3
+{
+    background-image: url(assets/item3.jpeg);
+}
+.grid-item4
+{
+    background-image: url(assets/item4.jpg);
+}
+.grid-item5
+{
+    background-image: url(assets/item5.jpg);
+}
+.grid-item6
+{
+    background-image: url(assets/item6.jpg);
+}
+.grid-item7
+{
+    background-image: url(assets/item3.jpeg);
+}
+.grid-item8
+{
+    background-image: url(assets/item1.png);
+}
+.grid-item9
+{
+    background-image: url(assets/item2.jpg);
+}
+
+.works  .grid .info
+{
+    opacity: 0;
+    
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* transition: opacity 0.4s ease-in-out; */
+    transition: 0.6s ease;
+    color: white;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+.works .grid .info div{
+    font-size: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.works .grid .grid-item1:hover .info,
+.works .grid .grid-item2:hover .info,
+.works .grid .grid-item3:hover .info,
+.works .grid .grid-item4:hover .info,
+.works .grid .grid-item5:hover .info,
+.works .grid .grid-item6:hover .info,
+.works .grid .grid-item7:hover .info,
+.works .grid .grid-item8:hover .info,
+.works .grid .grid-item9:hover .info
+
+{
+    opacity: 1;
+    height: 100%;
+}
+
+.works .grid .info .desc
+{
+    font-size: 15px;
+}
+
+.works .end
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    flex-direction: column;
+}
+
+.works .end .con{
+    font-size: 16px;
+    color: #ffffff;
+}
+.works .end .button
+{
+    margin-top: 2rem;
+    background-color:#c2ce62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    width: max-content;
+
+}
