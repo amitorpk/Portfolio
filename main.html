@@ -3,6 +3,8 @@
   <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <!-- <div class="main">
@@ -52,11 +54,19 @@
     <div class="wrapper" id="main">
       <div class="header">
         <img src="assets/logo.png" class="logo" />
+        <div class="hamburger"></div>
         <ul class="nav-list">
-          <li><a href="#main">About</a></li>
-          <li><a href="#works">Work</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li class="item"><a href="#main">About</a></li>
+          <li class="item"><a href="#works">Work</a></li>
+          <li class="item"><a href="#footer">Contact</a></li>
+          <li class="close">+</li>
         </ul>
+      </div>
+      <div class="mobile">
+        <li class="item"><a href="#main">About</a></li>
+        <li class="item"><a href="#works">Work</a></li>
+        <li class="item"><a href="#footer">Contact</a></li>
+        <li class="close">+</li>
       </div>
       <div class="main">
         <!-- <div class="header">
