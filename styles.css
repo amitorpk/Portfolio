@@ -180,8 +180,47 @@ body {
     height: 100%;
     width: 50%;
   }
+
+  .container .sub-container {
+    max-width: 50%;
+    padding: 2rem 0;
+  }
 }
 
+@media screen and (min-height: 850px) and (max-width: 700px) {
+  .main {
+    height: 80vh;
+  }
+
+  .main .profile-container .left {
+    height: 400px;
+    bottom: -180px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: auto;
+  }
+  .container {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 700px) and (max-height: 850px) {
+  .main .profile-container .left {
+    width: 70%;
+    height: 40vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -110px;
+    margin: auto;
+  }
+
+  .container {
+    margin-top: 110px;
+  }
+}
 @media screen and (max-width: 700px) {
   .main .profile-container {
     height: max-content;
@@ -194,17 +233,23 @@ body {
     position: relative;
   }
 
-  .main .profile-container .left {
+  .container .sub-container {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* .main .profile-container .left {
     width: 70%;
     height: 40vh;
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
     bottom: -110px;
-    margin:auto;
-  }
+    margin: auto;
+  } */
 
-  .main  .profile-container .right {
+  .main .profile-container .right {
     height: 100%;
     width: 100%;
     margin-bottom: 1.5rem;
@@ -213,10 +258,6 @@ body {
 
   .main .profile-container .left .img {
     bottom: -70%;
-  }
-
-  .container {
-    margin-top: 110px;
   }
 }
 
@@ -266,19 +307,18 @@ body {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
   padding-top: 6rem;
- 
-    list-style: none;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    gap: 3.5rem;
-    flex-direction: column;
 
-    transition: 0.4s ease;
- 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 3.5rem;
+  flex-direction: column;
+
+  transition: 0.4s ease;
 }
 
-.mobile .item{
+.mobile .item {
   display: inline;
   color: #ffffff;
   display: flex;
@@ -288,8 +328,7 @@ body {
   position: relative;
 }
 
-.mobile
-.close {
+.mobile .close {
   display: block;
   position: absolute;
   top: 0;
@@ -302,7 +341,7 @@ body {
   transform: rotate(45deg);
 }
 
- .mobile .item::after {
+.mobile .item::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -321,7 +360,6 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-
 
 .mobile.active {
   left: 0;
@@ -398,18 +436,18 @@ body {
 }
 
 .container .sub-container {
-  max-width: 50%;
+  /* max-width: 50%; */
   height: fit-content;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   margin-bottom: 2rem;
 }
 
 .container .sub-container .head {
-  font-size:  clamp(36px,10vw,120px);
+  font-size: clamp(36px, 10vw, 120px);
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 8px;
@@ -455,7 +493,7 @@ body {
 }
 
 .works .head {
-  font-size: clamp(36px,10vw,120px);
+  font-size: clamp(36px, 10vw, 120px);
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 8px;
@@ -689,8 +727,7 @@ body {
   color: #ffffff;
   width: 40%;
 }
-screen
-.form .left .button .button-text {
+screen .form .left .button .button-text {
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -706,7 +743,7 @@ screen
 }
 
 .form .right .top h1 {
-  font-size: clamp(36px,5vw,48px);
+  font-size: clamp(36px, 5vw, 48px);
   font-weight: bold;
 }
 
@@ -720,8 +757,8 @@ screen
 }
 
 .form .right ul li {
-  height: min(5vw,2rem);
-  width:  min(5vw,2rem);
+  height: min(5vw, 2rem);
+  width: min(5vw, 2rem);
 }
 
 .form .right .button {
@@ -737,20 +774,17 @@ screen
   letter-spacing: 3px;
 }
 
-@media screen and (max-width:700px){
-
+@media screen and (max-width: 700px) {
   .form {
-    
     width: 100%;
     padding: 5rem 15%;
-  
+
     background-color: #c2ce62;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  
 }
 
 .footer {
